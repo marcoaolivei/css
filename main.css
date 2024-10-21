@@ -1,0 +1,136 @@
+/* quando removemos o estilo de um elemento, e aplicamos o nosso padrão da página, chamados de reset */
+/* para selecionar todos os elementos da tela - tudo o que não tiver um estilo aplicado*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* para alterar o estilo do body  - comentado
+h1{
+    color:green
+}
+
+h2{
+    color:green
+}
+*/
+
+/* chamando a classe economy que está na <section> do arquivo html, para alterar h2*/
+/* o id tem que ser único na página  - comentado
+    color:gold
+}
+*/
+
+/* para selecionar uma class do arquivo html, é necessário colocar o ponto antes do nome da classe - comentado  
+.creation-date{
+    color: #ccc;
+}
+*/
+
+/* para selecionar todos os elementos da tela - tudo o que não tiver um estilo aplicado - comentado
+*{
+    color: darkred;
+}
+*/
+
+body > header { /* para selecionar o header que é filho direto do body */
+    background-color: #333;
+    padding: 16px 0; /* 16px em cima e em baixo e 0 nas laterais */
+    color:aliceblue
+    
+}
+header .container{
+    display: flex; /* para colocar os elementos em linha */
+    align-items: center;
+    justify-content: space-between; /* para distribuir o espaço entre os elementos */
+}
+
+header li {
+    display: inline;  /* para colocar os elementos em linha */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px; /* margem de 16px na esquerda para separar mais as palavras*/
+}
+
+header li a { /* para alterar o estilo da linha dos links esportes e economia */
+    color: aliceblue;
+    text-decoration: none; /* para retirar o sublinhado do link */ 
+}
+
+.container{
+    width: 1366px;
+    margin: 0 auto; /* para centralizar o container */
+}
+
+/* também podemos chamar sem escrever section - como acima, só colocando o ponto*/
+section .articles{
+    display: flex; /* para colocar os elementos em linha */
+    flex-wrap: wrap;  /* para criar outra linha*/
+    justify-content: space-between; /* para distribuir o espaço entre os elementos */
+}
+
+.articles article img{
+    /* width: 180px;   para a imagem com 180pixels da largura do container */
+    width: 100%; /* para a imagem ocupar toda a largura do container */
+}
+
+.articles article {
+    width: 30%; /* espaço para cada article 3 * 30%=90% sobra 10% da largura do container */
+}
+
+section{
+    padding: 16px 0; /* espaçamento entre as sessões de 16px em cima e em baixo e 0 nas laterais */
+}
+
+section h2, .articles article {
+    margin-bottom: 16px; /* margem de 16px em baixo do h2 e do aticle*/
+}
+
+.articles article h3 {
+    margin-top: 8px; /* margem de 16px em cima do h3 */
+    margin-bottom: 8px; /* margem de 16px em baixo do h3 */
+}
+
+.articles article a {
+    background-color: blue;
+    color:white;
+    padding: 8px;
+    display: inline-block; /* para o link ficar em bloco */
+    text-decoration: none; /* para retirar o sublinhado do link */
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p, .articles article a {
+    font-family: Arial, Helvetica, sans-serif; /* para a fonte do parágrafo a botão */
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}   
+
+#sports {
+    background-color:rgba(0,255,0,0.1);
+}
+
+#sports .articles article a {
+    background-color: green;
+}
+
+#economy {
+    background-color:#f8f59f;
+}
+
+#economy .articles article a {
+    background-color: #ff9f1a;
+    color:white;
+}
