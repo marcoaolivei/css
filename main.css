@@ -71,7 +71,7 @@ section .articles{
 }
 
 .articles article img{
-    /* width: 180px;   para a imagem com 180pixels da largura do container */
+    /*width: 180px;    para a imagem com 180pixels da largura do container */
     width: 100%; /* para a imagem ocupar toda a largura do container */
 }
 
@@ -132,5 +132,14 @@ section h2 {
 
 #economy .articles article a {
     background-color: #ff9f1a;
+    color:white;
+}
+
+#entret {
+    background-color: #d3831b;
+}
+
+#entret .articles article a {
+    background-color: #eec07f;
     color:white;
 }
